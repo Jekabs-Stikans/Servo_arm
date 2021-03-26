@@ -1,0 +1,611 @@
+EESchema Schematic File Version 4
+LIBS:Roboarm-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 6
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	8600 3700 8550 3700
+Wire Wire Line
+	8600 4450 8550 4450
+$Sheet
+S 8600 2900 650  550 
+U 5DDF16D9
+F0 "StepMotorBase" 50
+F1 "StepMotorBase.sch" 50
+F2 "2V" I L 8600 2950 50 
+F3 "A" I L 8600 3050 50 
+F4 "B" I L 8600 3150 50 
+F5 "C" I L 8600 3250 50 
+F6 "D" I L 8600 3350 50 
+$EndSheet
+Wire Wire Line
+	8550 3700 8550 4450
+$Comp
+L Motor:Motor_Servo M4
+U 1 1 5DE09A52
+P 8950 5400
+F 0 "M4" H 9282 5465 50  0000 L CNN
+F 1 "Motor_Hand_(SG90)" H 9282 5374 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 8950 5210 50  0001 C CNN
+F 3 "http://forums.parallax.com/uploads/attachments/46831/74481.png" H 8950 5210 50  0001 C CNN
+	1    8950 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR011
+U 1 1 5DE0A87B
+P 8600 5550
+F 0 "#PWR011" H 8600 5300 50  0001 C CNN
+F 1 "GND" H 8605 5377 50  0000 C CNN
+F 2 "" H 8600 5550 50  0001 C CNN
+F 3 "" H 8600 5550 50  0001 C CNN
+	1    8600 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8600 5550 8600 5500
+Wire Wire Line
+	8600 5500 8650 5500
+$Comp
+L power:+5V #PWR010
+U 1 1 5DE115C4
+P 8600 5250
+F 0 "#PWR010" H 8600 5100 50  0001 C CNN
+F 1 "+5V" H 8615 5423 50  0000 C CNN
+F 2 "" H 8600 5250 50  0001 C CNN
+F 3 "" H 8600 5250 50  0001 C CNN
+	1    8600 5250
+	1    0    0    -1  
+$EndComp
+Connection ~ 8550 3700
+Wire Wire Line
+	8600 2950 8550 2950
+Connection ~ 8550 2950
+Wire Wire Line
+	8550 2950 8550 3700
+$Comp
+L Connector_Generic:Conn_01x02 J2
+U 1 1 5DE3A22B
+P 8200 2500
+F 0 "J2" H 8250 2600 50  0000 R CNN
+F 1 "+2V_In" H 8350 2300 50  0000 R CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 8200 2500 50  0001 C CNN
+F 3 "~" H 8200 2500 50  0001 C CNN
+	1    8200 2500
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR09
+U 1 1 5DE3A375
+P 8400 2500
+F 0 "#PWR09" H 8400 2250 50  0001 C CNN
+F 1 "GND" H 8405 2327 50  0000 C CNN
+F 2 "" H 8400 2500 50  0001 C CNN
+F 3 "" H 8400 2500 50  0001 C CNN
+	1    8400 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J1
+U 1 1 5DE48E1F
+P 8200 1900
+F 0 "J1" H 8250 1700 50  0000 R CNN
+F 1 "+5V_Out" H 8400 2000 50  0000 R CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 8200 1900 50  0001 C CNN
+F 3 "~" H 8200 1900 50  0001 C CNN
+	1    8200 1900
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR07
+U 1 1 5DE4909C
+P 6700 1150
+F 0 "#PWR07" H 6700 1000 50  0001 C CNN
+F 1 "+5V" H 6715 1323 50  0000 C CNN
+F 2 "" H 6700 1150 50  0001 C CNN
+F 3 "" H 6700 1150 50  0001 C CNN
+	1    6700 1150
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR08
+U 1 1 5DE4C597
+P 8400 2000
+F 0 "#PWR08" H 8400 1750 50  0001 C CNN
+F 1 "GND" H 8405 1827 50  0000 C CNN
+F 2 "" H 8400 2000 50  0001 C CNN
+F 3 "" H 8400 2000 50  0001 C CNN
+	1    8400 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8650 5400 8600 5400
+Wire Wire Line
+	8600 5400 8600 5250
+$Comp
+L Connector_Generic:Conn_01x02 J3
+U 1 1 5DE65E05
+P 8200 1250
+F 0 "J3" H 8250 1050 50  0000 R CNN
+F 1 "+5V_In" H 8400 1350 50  0000 R CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 8200 1250 50  0001 C CNN
+F 3 "~" H 8200 1250 50  0001 C CNN
+	1    8200 1250
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR01
+U 1 1 5DE65E0C
+P 8400 1250
+F 0 "#PWR01" H 8400 1100 50  0001 C CNN
+F 1 "+5V" H 8415 1423 50  0000 C CNN
+F 2 "" H 8400 1250 50  0001 C CNN
+F 3 "" H 8400 1250 50  0001 C CNN
+	1    8400 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 5DE65E12
+P 8400 1350
+F 0 "#PWR02" H 8400 1100 50  0001 C CNN
+F 1 "GND" H 8405 1177 50  0000 C CNN
+F 2 "" H 8400 1350 50  0001 C CNN
+F 3 "" H 8400 1350 50  0001 C CNN
+	1    8400 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8550 2400 8550 2950
+$Sheet
+S 3600 3400 1150 300 
+U 5DF51729
+F0 "Ultrasonic_distancer" 50
+F1 "Ultrasonic_distancer.sch" 50
+F2 "Ultrasonic_Out" I R 4750 3600 50 
+F3 "Ultrasonic_PWM" I R 4750 3500 50 
+$EndSheet
+$Sheet
+S 3600 3000 1150 200 
+U 5DF66CB5
+F0 "Collision_detector" 50
+F1 "Collision_detector.sch" 50
+F2 "Interrupt" I R 4750 3100 50 
+$EndSheet
+Wire Wire Line
+	4750 3100 5450 3100
+$Sheet
+S 8600 4400 650  550 
+U 5DDDA1B6
+F0 "StepMotorElbow" 50
+F1 "StepMotorElbow.sch" 50
+F2 "2V" I L 8600 4450 50 
+F3 "A" I L 8600 4550 50 
+F4 "B" I L 8600 4650 50 
+F5 "C" I L 8600 4750 50 
+F6 "D" I L 8600 4850 50 
+$EndSheet
+Wire Wire Line
+	6050 3500 6050 2300
+Wire Wire Line
+	4750 3500 6050 3500
+Wire Wire Line
+	4750 3600 5550 3600
+Wire Wire Line
+	8400 2400 8550 2400
+Text Label 8400 2400 0    50   ~ 0
++2V
+$Comp
+L Device:R R8
+U 1 1 5DE8E791
+P 8000 3050
+F 0 "R8" V 8000 3050 50  0000 C CNN
+F 1 "500R" V 7900 3050 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 7930 3050 50  0001 C CNN
+F 3 "~" H 8000 3050 50  0001 C CNN
+	1    8000 3050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8150 3050 8600 3050
+$Comp
+L Device:R R9
+U 1 1 5DE8E917
+P 8000 3150
+F 0 "R9" V 8000 3150 50  0000 C CNN
+F 1 "500R" V 7900 3150 50  0001 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 7930 3150 50  0001 C CNN
+F 3 "~" H 8000 3150 50  0001 C CNN
+	1    8000 3150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8150 3150 8600 3150
+$Comp
+L Device:R R10
+U 1 1 5DE8E99B
+P 8000 3250
+F 0 "R10" V 8000 3250 50  0000 C CNN
+F 1 "500R" V 7900 3250 50  0001 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 7930 3250 50  0001 C CNN
+F 3 "~" H 8000 3250 50  0001 C CNN
+	1    8000 3250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8150 3250 8600 3250
+$Comp
+L Device:R R12
+U 1 1 5DE8E9E1
+P 8000 3800
+F 0 "R12" V 8000 3800 50  0000 C CNN
+F 1 "500R" V 7900 3800 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 7930 3800 50  0001 C CNN
+F 3 "~" H 8000 3800 50  0001 C CNN
+	1    8000 3800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8150 3800 8600 3800
+$Comp
+L Device:R R13
+U 1 1 5DE8EA15
+P 8000 3900
+F 0 "R13" V 8000 3900 50  0000 C CNN
+F 1 "500R" V 7900 3900 50  0001 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 7930 3900 50  0001 C CNN
+F 3 "~" H 8000 3900 50  0001 C CNN
+	1    8000 3900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8150 3900 8600 3900
+$Comp
+L Device:R R14
+U 1 1 5DE8EA4F
+P 8000 4000
+F 0 "R14" V 8000 4000 50  0000 C CNN
+F 1 "500R" V 7900 4000 50  0001 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 7930 4000 50  0001 C CNN
+F 3 "~" H 8000 4000 50  0001 C CNN
+	1    8000 4000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8150 4000 8600 4000
+$Comp
+L Device:R R16
+U 1 1 5DE8EA7D
+P 8000 4550
+F 0 "R16" V 8000 4550 50  0000 C CNN
+F 1 "500R" V 7900 4550 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 7930 4550 50  0001 C CNN
+F 3 "~" H 8000 4550 50  0001 C CNN
+	1    8000 4550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8150 4550 8600 4550
+$Comp
+L Device:R R17
+U 1 1 5DE8EAF3
+P 8000 4650
+F 0 "R17" V 8000 4650 50  0000 C CNN
+F 1 "500R" V 7900 4650 50  0001 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 7930 4650 50  0001 C CNN
+F 3 "~" H 8000 4650 50  0001 C CNN
+	1    8000 4650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8150 4650 8600 4650
+$Comp
+L Device:R R18
+U 1 1 5DE8EB39
+P 8000 4750
+F 0 "R18" V 8000 4750 50  0000 C CNN
+F 1 "500R" V 7900 4750 50  0001 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 7930 4750 50  0001 C CNN
+F 3 "~" H 8000 4750 50  0001 C CNN
+	1    8000 4750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8150 4750 8600 4750
+$Sheet
+S 8600 3650 650  550 
+U 5DD44174
+F0 "StepMotorShoulder" 50
+F1 "StepMotorShoulder.sch" 50
+F2 "2V" I L 8600 3700 50 
+F3 "A" I L 8600 3800 50 
+F4 "B" I L 8600 3900 50 
+F5 "C" I L 8600 4000 50 
+F6 "D" I L 8600 4100 50 
+$EndSheet
+$Comp
+L Device:R R19
+U 1 1 5DEAFBA1
+P 8000 4850
+F 0 "R19" V 8000 4850 50  0000 C CNN
+F 1 "500R" V 7900 4850 50  0001 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 7930 4850 50  0001 C CNN
+F 3 "~" H 8000 4850 50  0001 C CNN
+	1    8000 4850
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R15
+U 1 1 5DEAFBD7
+P 8000 4100
+F 0 "R15" V 8000 4100 50  0000 C CNN
+F 1 "500R" V 7900 4100 50  0001 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 7930 4100 50  0001 C CNN
+F 3 "~" H 8000 4100 50  0001 C CNN
+	1    8000 4100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R11
+U 1 1 5DEAFCA2
+P 8000 3350
+F 0 "R11" V 8000 3350 50  0000 C CNN
+F 1 "500R" V 7900 3350 50  0001 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 7930 3350 50  0001 C CNN
+F 3 "~" H 8000 3350 50  0001 C CNN
+	1    8000 3350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8150 3350 8600 3350
+Wire Wire Line
+	8150 4100 8600 4100
+Wire Wire Line
+	7850 4100 7450 4100
+Wire Wire Line
+	8150 4850 8600 4850
+Wire Wire Line
+	6550 5300 6550 2300
+Wire Wire Line
+	6550 5300 8650 5300
+Wire Wire Line
+	5450 3100 5450 2300
+Wire Wire Line
+	5550 3600 5550 2300
+$Comp
+L Switch:SW_Push SW1
+U 1 1 5DFB13EB
+P 4650 2650
+F 0 "SW1" H 4650 2843 50  0001 C CNN
+F 1 "SW_Push" H 4650 2844 50  0001 C CNN
+F 2 "Button_Switch_SMD:SW_SPST_REED_CT05-XXXX-G1" H 4650 2850 50  0001 C CNN
+F 3 "" H 4650 2850 50  0001 C CNN
+	1    4650 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW2
+U 1 1 5DFB1416
+P 4650 2800
+F 0 "SW2" H 4650 2993 50  0001 C CNN
+F 1 "SW_Push" H 4650 2994 50  0001 C CNN
+F 2 "Button_Switch_SMD:SW_SPST_REED_CT05-XXXX-G1" H 4650 3000 50  0001 C CNN
+F 3 "" H 4650 3000 50  0001 C CNN
+	1    4650 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 2350 5050 2350
+Wire Wire Line
+	5050 2350 5050 2300
+Wire Wire Line
+	4850 2500 5150 2500
+Wire Wire Line
+	5150 2500 5150 2300
+Wire Wire Line
+	5250 2300 5250 2650
+Wire Wire Line
+	5250 2650 4850 2650
+Wire Wire Line
+	4850 2800 5350 2800
+Wire Wire Line
+	5350 2800 5350 2300
+Wire Wire Line
+	4450 2800 4250 2800
+Wire Wire Line
+	4250 2800 4250 2650
+Wire Wire Line
+	4450 2350 4250 2350
+Connection ~ 4250 2350
+Wire Wire Line
+	4250 2350 4250 2200
+Wire Wire Line
+	4450 2500 4250 2500
+Connection ~ 4250 2500
+Wire Wire Line
+	4250 2500 4250 2350
+Wire Wire Line
+	4450 2650 4250 2650
+Connection ~ 4250 2650
+Wire Wire Line
+	4250 2650 4250 2500
+$Comp
+L power:+5V #PWR04
+U 1 1 5DFBB9E1
+P 4250 2200
+F 0 "#PWR04" H 4250 2050 50  0001 C CNN
+F 1 "+5V" H 4265 2373 50  0000 C CNN
+F 2 "" H 4250 2200 50  0001 C CNN
+F 3 "" H 4250 2200 50  0001 C CNN
+	1    4250 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Roboarm-rescue:Switch_Custom-Custom_draws SW4
+U 1 1 5DFC571A
+P 4650 2350
+F 0 "SW4" H 4650 2493 50  0001 C CNN
+F 1 "Switch_Custom" H 4400 2250 50  0001 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 4625 2375 50  0001 C CNN
+F 3 "" H 4625 2375 50  0001 C CNN
+	1    4650 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Roboarm-rescue:Switch_Custom-Custom_draws SW3
+U 1 1 5DFC5FB4
+P 4650 2500
+F 0 "SW3" H 4650 2643 50  0001 C CNN
+F 1 "Switch_Custom" H 4400 2400 50  0001 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 4625 2525 50  0001 C CNN
+F 3 "" H 4625 2525 50  0001 C CNN
+	1    4650 2500
+	1    0    0    -1  
+$EndComp
+NoConn ~ 5700 1150
+NoConn ~ 5800 1150
+NoConn ~ 5900 1150
+NoConn ~ 6100 1150
+NoConn ~ 6500 1150
+NoConn ~ 6600 1150
+$Comp
+L power:GND #PWR0101
+U 1 1 5DFDBDBB
+P 6350 1250
+F 0 "#PWR0101" H 6350 1000 50  0001 C CNN
+F 1 "GND" H 6355 1077 50  0000 C CNN
+F 2 "" H 6350 1250 50  0001 C CNN
+F 3 "" H 6350 1250 50  0001 C CNN
+	1    6350 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 1200 6300 1200
+Wire Wire Line
+	6300 1200 6300 1150
+Wire Wire Line
+	6000 1200 6000 1150
+Wire Wire Line
+	6300 1200 6350 1200
+Wire Wire Line
+	6400 1200 6400 1150
+Connection ~ 6300 1200
+NoConn ~ 6200 1150
+Wire Wire Line
+	6350 1200 6350 1250
+Connection ~ 6350 1200
+Wire Wire Line
+	6350 1200 6400 1200
+Wire Wire Line
+	7750 2300 7750 3800
+Wire Wire Line
+	7750 3800 7850 3800
+Wire Wire Line
+	7650 2300 7650 3900
+Wire Wire Line
+	7650 3900 7850 3900
+Wire Wire Line
+	7550 2300 7550 4000
+Wire Wire Line
+	7550 4000 7850 4000
+Wire Wire Line
+	7450 2300 7450 4100
+Wire Wire Line
+	7350 4550 7350 2300
+Wire Wire Line
+	7350 4550 7850 4550
+Wire Wire Line
+	7250 4650 7250 2300
+Wire Wire Line
+	7250 4650 7850 4650
+Wire Wire Line
+	7150 4750 7150 2300
+Wire Wire Line
+	7150 4750 7850 4750
+Wire Wire Line
+	7050 4850 7050 2300
+Wire Wire Line
+	7050 4850 7850 4850
+Wire Wire Line
+	6350 3250 7850 3250
+$Comp
+L power:+5V #PWR0102
+U 1 1 5DFEEA52
+P 8400 1900
+F 0 "#PWR0102" H 8400 1750 50  0001 C CNN
+F 1 "+5V" H 8415 2073 50  0000 C CNN
+F 2 "" H 8400 1900 50  0001 C CNN
+F 3 "" H 8400 1900 50  0001 C CNN
+	1    8400 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Custom_draws:ATmega328P MCU1
+U 1 1 5DFFAA41
+P 5800 950
+F 0 "MCU1" V 6100 550 50  0000 R CNN
+F 1 "ATmega328P" V 5774 -278 50  0001 R CNN
+F 2 "Custom_Footprints:ATmega328P_Xplained_mini" H 5850 900 50  0001 C CNN
+F 3 "" H 5850 900 50  0001 C CNN
+	1    5800 950 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Custom_draws:ATmega328P MCU1
+U 2 1 5E004343
+P 5150 2100
+F 0 "MCU1" V 5500 2100 50  0000 R CNN
+F 1 "ATmega328P" V 5149 1572 50  0001 R CNN
+F 2 "Custom_Footprints:ATmega328P_Xplained_mini" H 5200 2050 50  0001 C CNN
+F 3 "" H 5200 2050 50  0001 C CNN
+	2    5150 2100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Custom_draws:ATmega328P MCU1
+U 3 1 5E0043D3
+P 6150 2100
+F 0 "MCU1" V 6500 2100 50  0000 R CNN
+F 1 "ATmega328P" V 6149 1572 50  0001 R CNN
+F 2 "Custom_Footprints:ATmega328P_Xplained_mini" H 6200 2050 50  0001 C CNN
+F 3 "" H 6200 2050 50  0001 C CNN
+	3    6150 2100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Custom_draws:ATmega328P MCU1
+U 4 1 5E004467
+P 7150 2100
+F 0 "MCU1" V 7500 1950 50  0000 R CNN
+F 1 "ATmega328P" V 7600 2050 50  0001 R CNN
+F 2 "Custom_Footprints:ATmega328P_Xplained_mini" H 7200 2050 50  0001 C CNN
+F 3 "" H 7200 2050 50  0001 C CNN
+	4    7150 2100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6150 3050 6150 2300
+Wire Wire Line
+	6150 3050 7850 3050
+Wire Wire Line
+	6250 3150 6250 2300
+Wire Wire Line
+	6250 3150 7850 3150
+Wire Wire Line
+	6350 3250 6350 2300
+Wire Wire Line
+	6450 2300 6450 3350
+Wire Wire Line
+	6450 3350 7850 3350
+$EndSCHEMATC
